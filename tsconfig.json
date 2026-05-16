@@ -1,0 +1,55 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "jsx": "react-native",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/domain/*": [
+        "./src/domain/*"
+      ],
+      "@/features/*": [
+        "./src/features/*"
+      ],
+      "@/shared/*": [
+        "./src/shared/*"
+      ],
+      "@/data/*": [
+        "./src/data/*"
+      ],
+      "@/core/*": [
+        "./src/core/*"
+      ],
+      "@/providers/*": [
+        "./src/providers/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/app/**/*",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js"
+  ]
+}
